@@ -22,7 +22,10 @@ app.use((req, res, next) => {
   next();
 });
 
-// Connect MongoDB Database
+// Sets View Engine
+app.set("view engine", "ejs")
+
+// Connects MongoDB Database
 mongoose.connect("mongodb://localhost:27017");
 const db = mongoose.connection;
 db.on("error", (error) => console.log(error));
