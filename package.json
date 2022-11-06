@@ -1,0 +1,27 @@
+{
+  "name": "crud-app-mongndb-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roshith844/crud-app-mongndb-nodejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roshith844/crud-app-mongndb-nodejs/issues"
+  },
+  "homepage": "https://github.com/roshith844/crud-app-mongndb-nodejs#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mongoose": "^6.7.1",
+    "multer": "^1.4.5-lts.1"
+  }
+}
