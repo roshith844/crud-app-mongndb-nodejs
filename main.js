@@ -6,11 +6,11 @@ const PORT = process.env.PORT || 4000;
 // Router prefix
 app.use("", require("./routes/routes"));
 
-app.use((req, res, next)=>{
-  res.locals.message = req.session.message
-  delete req.session.message
-  next()
-})
+app.use((req, res, next) => {
+  res.locals.message = req.session.message;
+  delete req.session.message;
+  next();
+});
 // Sets View Engine
 app.set("view engine", "ejs");
 
