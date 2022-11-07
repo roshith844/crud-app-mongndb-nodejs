@@ -1,9 +1,43 @@
 <%- include('layout/header') %>
 <div class="container">
-     <div class="row">
-<div class="col-lg-12">
-     <h1>home Page content</h1>
-</div>
-     </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <h1>home Page content</h1>
+      <!-- Table -->
+      <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">name</th>
+              <th scope="col">email</th>
+              <th scope="col">Phone</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>fnk</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+              <td><a href=""><i class="fa-solid fa-pen-to-square"></i></a>
+          <a href=""><i class="fa fa-trash" aria-hidden="true"></i></a>
+          </td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td colspan="2">Larry the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
 </div>
 <%- include('layout/footer') %>
