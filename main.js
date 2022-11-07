@@ -22,6 +22,9 @@ app.use((req, res, next) => {
   next();
 });
 
+// Router prefix
+app.use('', require('./routes/routes'))
+
 // Sets View Engine
 app.set("view engine", "ejs")
 
