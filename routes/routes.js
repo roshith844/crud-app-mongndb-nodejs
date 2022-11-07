@@ -23,4 +23,8 @@ router.get("/users", (req, res) => {
   res.send("All users");
 });
 
+router.get('/add', (req, res)=>{
+  res.render('add_users', {title: 'add users'})
+})
+
 module.exports = router;
