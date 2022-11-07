@@ -4,7 +4,8 @@ const app = express();
 const path = require("path");
 const exphbs = require("express-handlebars");
 const bodyparser = require("body-parser");
-
+const courseController = require("./controllers/courses");
+app.use("/course", courseController);
 app.use(
   bodyparser.urlencoded({
     extended: true,
