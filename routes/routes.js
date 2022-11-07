@@ -14,6 +14,11 @@ router.use(
   })
 );
 
+// Routes
+router.get("/", (req, res) => {
+     res.render('index', { title: 'CRUD APP'})
+   });
+
 router.get("/users", (req, res) => {
   res.send("All users");
 });
