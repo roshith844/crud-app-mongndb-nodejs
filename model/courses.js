@@ -4,9 +4,6 @@ var CourseSchema = new mongoose.Schema({
     type: String,
     required: "Required",
   },
-  id: {
-    type: String,
-  },
   duration: {
     type: String,
   },

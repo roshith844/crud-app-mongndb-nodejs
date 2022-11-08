@@ -17,9 +17,7 @@ app.set("views", path.join(__dirname, "/views/")); // setting views
 app.engine(
   "hbs",
   exphbs.engine({
-    extname: "hbs",
-    defaultLayout: "mainLayout",
-    layoutsDir: __dirname + "views/layouts",
+    extname: "hbs"
   })
 );
 
@@ -29,6 +27,6 @@ app.get("/", (req, res) => {
   res.send("home page");
 });
 
-app.listen("3000", () => {
+app.listen("4000", () => {
   console.log("server started");
 });
